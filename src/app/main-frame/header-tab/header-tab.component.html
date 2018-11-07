@@ -1,0 +1,121 @@
+<form #headerForm="ngForm" novalidate>
+    {{headerForm.valid}}
+    {{headerForm.value | json}}
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-title"
+        [(ngModel)]="headerTitle"
+        t-label="Título"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-version"
+        [(ngModel)]="headerVersion"
+        t-label="Versão"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-description"
+        [(ngModel)]="headerDescription"
+        t-label="Descrição"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-contact-name"
+        [(ngModel)]="headerContactName"
+        t-icon="thf-icon-user"
+        t-label="Nome de Contato"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-contact-email"
+        [(ngModel)]="headerContactEmail"
+        t-icon="thf-icon-mail"
+        t-label="E-mail de Contato"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-contact-url"
+        [(ngModel)]="headerContactUrl"
+        t-icon="thf-icon-world"
+        t-label="URL de Contato"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-tos-url"
+        [(ngModel)]="headerTosUrl"
+        t-icon="thf-icon-world"
+        t-label="URL dos Termos de Serviço"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-license-name"
+        [(ngModel)]="headerLicenseName"
+        t-label="Nome da Licença"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-license-url"
+        [(ngModel)]="headerLicenseUrl"
+        t-icon="thf-icon-world"
+        t-label="URL da Licença"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-external-docs"
+        [(ngModel)]="headerExternalDocs"
+        t-label="Documentos Externos"
+        t-required>
+      </thf-input>
+    </div>
+
+    <div class="thf-row">
+      <thf-input
+        class="thf-lg-12"
+        name="header-documentation-url"
+        [(ngModel)]="headerDocumentationUrl"
+        t-icon="thf-icon-world"
+        t-label="URL da Documentação"
+        t-required>
+      </thf-input>
+    </div>
+                              
+
+  </form>
