@@ -9,6 +9,7 @@ import { MainFrameComponent } from './main-frame/main-frame.component';
 import { HeaderTabComponent } from './main-frame/header-tab/header-tab.component';
 import { ServersTabComponent } from './main-frame/servers-tab/servers-tab.component';
 import { TagsTabComponent } from './main-frame/tags-tab/tags-tab.component';
+import { ServerBoxComponent } from './main-frame/servers-tab/server-box/server-box.component';
 
 
 
@@ -20,7 +21,8 @@ import { TagsTabComponent } from './main-frame/tags-tab/tags-tab.component';
     MainFrameComponent,
     HeaderTabComponent,
     ServersTabComponent,
-    TagsTabComponent
+    TagsTabComponent,
+    ServerBoxComponent
   ],
   imports: [
     BrowserModule,
