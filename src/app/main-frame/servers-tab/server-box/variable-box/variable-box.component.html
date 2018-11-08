@@ -1,0 +1,21 @@
+<form #variableBoxForm="ngForm" novalidate>
+  <div class="thf-row">
+    <thf-input class="thf-md-12" name="variable-name" [(ngModel)]="variableName" t-clean t-label="Nome" t-required>
+    </thf-input>
+  </div>
+  <div class="thf-row">
+    <thf-input class="thf-md-12" name="variable-description" [(ngModel)]="variableDescription" t-clean t-label="Descrição">
+    </thf-input>
+  </div>
+  <div class="thf-row thf-mb-3">
+    <thf-input class="thf-md-12" name="variable-default" [(ngModel)]="variableDefault" t-clean t-label="Default">
+    </thf-input>
+    <thf-button class="thf-md-3 thf-mt-5" t-small t-label="Adicionar Enum" (t-click)="onClick()">
+    </thf-button>
+  </div>
+  <div class="thf-row">
+    <div class="thf-row thf-p-3" style="background-color:gainsboro;">
+      <app-enum-box></app-enum-box>
+    </div>
+  </div>
+</form>

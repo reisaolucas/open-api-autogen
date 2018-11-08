@@ -10,6 +10,9 @@ import { HeaderTabComponent } from './main-frame/header-tab/header-tab.component
 import { ServersTabComponent } from './main-frame/servers-tab/servers-tab.component';
 import { TagsTabComponent } from './main-frame/tags-tab/tags-tab.component';
 import { ServerBoxComponent } from './main-frame/servers-tab/server-box/server-box.component';
+import { VariableBoxComponent } from './main-frame/servers-tab/server-box/variable-box/variable-box.component';
+import { EnumBoxComponent } from './main-frame/servers-tab/server-box/variable-box/enum-box/enum-box.component';
+import { TagBoxComponent } from './main-frame/tags-tab/tag-box/tag-box.component';
 
 
 
@@ -22,7 +25,10 @@ import { ServerBoxComponent } from './main-frame/servers-tab/server-box/server-b
     HeaderTabComponent,
     ServersTabComponent,
     TagsTabComponent,
-    ServerBoxComponent
+    ServerBoxComponent,
+    VariableBoxComponent,
+    EnumBoxComponent,
+    TagBoxComponent
   ],
   imports: [
     BrowserModule,

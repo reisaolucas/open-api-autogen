@@ -1,16 +1,20 @@
-<form #headerForm="ngForm" novalidate>
-  <div class="thf-row">
+<form #serverBoxForm="ngForm" novalidate>
+  <div class="thf-row thf-p-3" style="background-color:gainsboro;">
+    <div class="thf-row thf-mb-3">
+      <span class="thf-md-1 thf-icon thf-icon-delete" t-tooltip="Deletar Servidor"></span>
 
-    <span class="thf-md-1 thf-icon thf-icon-delete" t-tooltip="Deletar Servidor"></span>
+      <thf-input class="thf-md-4" name="server-url" [(ngModel)]="serverLabel" t-icon="thf-icon-world" t-clean t-label="URL"
+        t-required>
+      </thf-input>
 
-    <thf-input class="thf-md-4" name="server-url" [(ngModel)]="serverLabel" t-icon="thf-icon-world" t-clean t-label="URL"
-      t-required>
-    </thf-input>
+      <thf-input class="thf-md-4" name="server-description" [(ngModel)]="serverDescription" t-clean t-label="Descrição">
+      </thf-input>
 
-    <thf-input class="thf-md-4" name="server-description" [(ngModel)]="serverDescription" t-clean t-label="Descrição">
-    </thf-input>
-
-    <thf-button class="thf-md-3 thf-mt-5" t-small t-label="Adicionar Variável" (t-click)="onClick()">
-    </thf-button>
+      <thf-button class="thf-md-3 thf-mt-5" t-small t-label="Adicionar Variável" (t-click)="onClick()">
+      </thf-button>
+    </div>
+    <div class="thf-row thf-p-3" style="background-color:floralwhite;">
+      <app-variable-box></app-variable-box>
+    </div>
   </div>
 </form>
