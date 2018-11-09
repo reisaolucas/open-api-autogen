@@ -1,3 +1,26 @@
-<p>
-  tag-box works!
-</p>
+<form #tagBoxForm="ngForm" novalidate>
+  <div class="thf-row thf-p-3" style="background-color:gainsboro;">
+    <div class="thf-row">
+
+
+      <thf-input class="thf-md-11" name="tag-name" [(ngModel)]="tagName" t-clean t-label="Nome" t-required>
+      </thf-input>
+      <span class="thf-md-1 thf-icon thf-icon-delete" t-tooltip="Deletar Tag"></span>
+    </div>
+    <div class="thf-row">
+      <thf-textarea class="thf-md-12" name="tag-description" [(ngModel)]="tagDescription" t-clean t-label="Descrição"
+        t-required>
+      </thf-textarea>
+    </div>
+    <div class="thf-row">
+      <thf-textarea class="thf-md-12" name="tag-external-docs" [(ngModel)]="tagExternalDocs" t-clean t-label="Documentos Externos"
+        t-required>
+      </thf-textarea>
+    </div>
+    <div class="thf-row">
+      <thf-input class="thf-md-12" name="tag-docs-url" [(ngModel)]="tagDocsUrl" t-clean t-label="URL dos Documentos"
+        t-required>
+      </thf-input>
+    </div>
+  </div>
+</form>
