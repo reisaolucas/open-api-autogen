@@ -2,4 +2,6 @@
   <thf-button class="thf-md-3 thf-m-5" t-label="Adicionar Servidor" (t-click)="onClick()">
   </thf-button>
 </div>
-<app-server-box></app-server-box>
+<div class="thf-row" *ngFor="let num of arrayGenerica">
+  <app-server-box [(serverProperty)]="oasFile.server" class="thf-lg-12 thf-mb-3"></app-server-box>
+</div>

@@ -1,22 +1,26 @@
 <thf-page-default t-title="OpenAPI Autogen">
   <div class="thf-row">
     <p class="thf-font-text">
-      Made by Lucas Reis at <span class="thf-icon thf-icon-totvs"></span> TOTVS.
+      Made by Lucas Reis at <span class="thf-icon thf-icon-totvs"></span>.
     </p>
+    <hr>
+    {{oasFile | json}}
+
   </div>
   <thf-tabs>
     <thf-tab t-label="Sobre" t-disabled>
     </thf-tab>
-
-    <thf-tab t-label="Código" t-disabled>
+    
+    <thf-tab t-label="Codigo">
+      <app-code-tab (jsonChanged)="jsonChanged($event)" [oasObjectProperty]="oasFile"></app-code-tab>
     </thf-tab>
 
     <thf-tab t-label="Header">
-      <app-header-tab></app-header-tab>
+      <app-header-tab [(infoProperty)]="oasFile.info"></app-header-tab>
     </thf-tab>
 
     <thf-tab t-label="Servers">
-      <app-servers-tab></app-servers-tab>
+      <app-servers-tab [(serversProperty)]="oasFile.servers"></app-servers-tab>
     </thf-tab>
 
     <thf-tab t-label="Security" t-disabled>

@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { ThfModule } from '@totvs/thf-ui';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { ThfCodeEditorModule } from '@totvs/thf-code-editor';
+
+
 
 import { AppComponent } from './app.component';
 import { MainFrameComponent } from './main-frame/main-frame.component';
@@ -13,6 +16,7 @@ import { ServerBoxComponent } from './main-frame/servers-tab/server-box/server-b
 import { VariableBoxComponent } from './main-frame/servers-tab/server-box/variable-box/variable-box.component';
 import { EnumBoxComponent } from './main-frame/servers-tab/server-box/variable-box/enum-box/enum-box.component';
 import { TagBoxComponent } from './main-frame/tags-tab/tag-box/tag-box.component';
+import { CodeTabComponent } from './main-frame/code-tab/code-tab.component';
 
 
 
@@ -28,13 +32,15 @@ import { TagBoxComponent } from './main-frame/tags-tab/tag-box/tag-box.component
     ServerBoxComponent,
     VariableBoxComponent,
     EnumBoxComponent,
-    TagBoxComponent
+    TagBoxComponent,
+    CodeTabComponent
   ],
   imports: [
     BrowserModule,
     ThfModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ThfCodeEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
