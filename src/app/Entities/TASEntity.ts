@@ -1,5 +1,5 @@
 export class TasEntity {
-    'openapi': string;
+    'openapi' = '3.0.0';
     'servers': Array<TasServerEntity> = new Array<TasServerEntity>();
     'info': TasInfoEntity = new TasInfoEntity();
 }
