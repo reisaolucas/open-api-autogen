@@ -11,7 +11,7 @@
     <thf-tab t-label="Sobre" t-disabled>
     </thf-tab>
     
-    <thf-tab t-label="Codigo">
+    <thf-tab t-label="Código">
       <app-code-tab (jsonChanged)="jsonChanged($event)" [oasObjectProperty]="oasFile"></app-code-tab>
     </thf-tab>
 
@@ -20,7 +20,7 @@
     </thf-tab>
 
     <thf-tab t-label="X-TOTVS">
-      <app-xtotvs-tab></app-xtotvs-tab>
+      <app-xtotvs-tab [(infoProperty)]="oasFile.info"></app-xtotvs-tab>
     </thf-tab>
 
     <thf-tab t-label="Servers">

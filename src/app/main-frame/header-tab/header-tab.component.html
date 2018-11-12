@@ -1,13 +1,11 @@
 <form #headerForm="ngForm" novalidate>
-  {{infoProperty | json}}
-
   <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-title" [(ngModel)]="infoProperty.title" t-label="Título" t-required>
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-title" [(ngModel)]="infoProperty.title" t-label="Título"
+      t-required>
     </thf-input>
-  </div>
 
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-version" [(ngModel)]="infoProperty.version" t-label="Versão" t-required>
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-version" [(ngModel)]="infoProperty.version" t-label="Versão"
+      t-required>
     </thf-input>
   </div>
 
@@ -18,52 +16,43 @@
   </div>
 
   <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-contact-name" [(ngModel)]="infoProperty.contact.name" t-icon="thf-icon-user"
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-contact-name" [(ngModel)]="infoProperty.contact.name" t-icon="thf-icon-user"
       t-label="Nome de Contato" t-required>
     </thf-input>
-  </div>
 
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-contact-email" [(ngModel)]="infoProperty.contact.email" t-icon="thf-icon-mail"
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-contact-email" [(ngModel)]="infoProperty.contact.email" t-icon="thf-icon-mail"
       t-label="E-mail de Contato" t-required>
     </thf-input>
   </div>
-
   <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-contact-url" [(ngModel)]="infoProperty.contact.url" t-icon="thf-icon-world"
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-contact-url" [(ngModel)]="infoProperty.contact.url" t-icon="thf-icon-world"
       t-label="URL de Contato" t-required>
     </thf-input>
-  </div>
 
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-tos-url" [(ngModel)]="infoProperty.termsOfService" t-icon="thf-icon-world" t-label="URL dos Termos de Serviço"
-      t-required>
+
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-tos-url" [(ngModel)]="infoProperty.termsOfService" t-icon="thf-icon-world"
+      t-label="URL dos Termos de Serviço" t-required>
     </thf-input>
   </div>
-
   <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-license-name" [(ngModel)]="infoProperty.license.name" t-label="Nome da Licença"
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-license-name" [(ngModel)]="infoProperty.license.name" t-label="Nome da Licença"
       t-required>
     </thf-input>
-  </div>
 
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-license-url" [(ngModel)]="infoProperty.license.url" t-icon="thf-icon-world"
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-license-url" [(ngModel)]="infoProperty.license.url" t-icon="thf-icon-world"
       t-label="URL da Licença" t-required>
     </thf-input>
   </div>
-
   <div class="thf-row">
-    <thf-textarea class="thf-lg-12 thf-mb-2" name="header-external-docs" [(ngModel)]="headerExternalDocs" t-label="Documentos Externos"
+    <thf-input class="thf-lg-6 thf-mb-2" name="header-documentation-url" [(ngModel)]="headerDocumentationUrl" t-icon="thf-icon-world"
+      t-label="URL da Documentação" t-required>
+    </thf-input>
+
+    <thf-textarea class="thf-lg-6 thf-mb-2" name="header-external-docs" [(ngModel)]="headerExternalDocs" t-label="Documentos Externos"
       t-required>
     </thf-textarea>
   </div>
 
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="header-documentation-url" [(ngModel)]="headerDocumentationUrl" t-icon="thf-icon-world"
-      t-label="URL da Documentação" t-required>
-    </thf-input>
-  </div>
 
 
 </form>
