@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { TasServerEntity } from 'src/app/Entities/TASEntity';
 
 @Component({
   selector: 'app-server-box',
@@ -7,8 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ServerBoxComponent implements OnInit {
 
   constructor() { }
-  @Input() serverProperty;
+  @Input() serverProperty: TasServerEntity;
+  @Output() deleteClicked: EventEmitter<TasServerEntity> = new EventEmitter<TasServerEntity>();
+
   ngOnInit() {
+  }
+
+  passServerToServers() {
+    this.deleteClicked.emit(this.serverProperty); // pass the server to servers array when trash icon is clicked
   }
 
 }

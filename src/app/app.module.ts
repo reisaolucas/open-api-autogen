@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ThfCodeEditorModule } from '@totvs/thf-code-editor';
 
-
-
 import { AppComponent } from './app.component';
 import { MainFrameComponent } from './main-frame/main-frame.component';
 import { HeaderTabComponent } from './main-frame/header-tab/header-tab.component';
@@ -17,10 +15,7 @@ import { VariableBoxComponent } from './main-frame/servers-tab/server-box/variab
 import { EnumBoxComponent } from './main-frame/servers-tab/server-box/variable-box/enum-box/enum-box.component';
 import { TagBoxComponent } from './main-frame/tags-tab/tag-box/tag-box.component';
 import { CodeTabComponent } from './main-frame/code-tab/code-tab.component';
-
-
-
-
+import { XtotvsTabComponent } from './main-frame/xtotvs-tab/xtotvs-tab.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +28,8 @@ import { CodeTabComponent } from './main-frame/code-tab/code-tab.component';
     VariableBoxComponent,
     EnumBoxComponent,
     TagBoxComponent,
-    CodeTabComponent
+    CodeTabComponent,
+    XtotvsTabComponent
   ],
   imports: [
     BrowserModule,
