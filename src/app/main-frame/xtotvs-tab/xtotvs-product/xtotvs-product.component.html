@@ -1,27 +1,27 @@
 <form #xtotvsProductForm="ngForm" novalidate>
   <div class="thf-row thf-p-3" style="background-color:gainsboro;">
     <div class="thf-row">
-      <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-product" [(ngModel)]="xtotvsProduct.product"
+      <thf-input class="thf-lg-6 thf-mb-2" name="xtotvs-product-product" [(ngModel)]="xtotvsProduct.product"
         t-label="Produto" t-required>
       </thf-input>
 
-      <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-adapter" [(ngModel)]="xtotvsProduct.adapter"
+      <thf-input class="thf-lg-6 thf-mb-2" name="xtotvs-product-adapter" [(ngModel)]="xtotvsProduct.adapter"
         t-label="Adapter" t-required>
       </thf-input>
     </div>
 
     <div class="thf-row">
-      <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-contact" [(ngModel)]="xtotvsProduct.contact"
+      <thf-input class="thf-lg-6 thf-mb-2" name="xtotvs-product-contact" [(ngModel)]="xtotvsProduct.contact"
         t-icon="thf-icon-user" t-label="Contato" t-required>
       </thf-input>
 
-      <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-description" [(ngModel)]="xtotvsProduct.description"
+      <thf-input class="thf-lg-6 thf-mb-2" name="xtotvs-product-description" [(ngModel)]="xtotvsProduct.description"
         t-label="Descrição" t-required>
       </thf-input>
     </div>
 
     <div class="thf-row">
-      <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-helpurl" [(ngModel)]="xtotvsProduct.helpUrl"
+      <thf-input class="thf-lg-10 thf-mb-2" name="xtotvs-product-helpurl" [(ngModel)]="xtotvsProduct.helpUrl"
         t-label="URL da Ajuda" t-required>
       </thf-input>
       <span class="thf-lg-1 thf-icon thf-icon-delete" t-tooltip="Deletar Produto" (click)="passProductToProducts()"></span>

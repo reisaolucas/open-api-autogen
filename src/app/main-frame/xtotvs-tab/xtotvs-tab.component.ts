@@ -7,20 +7,18 @@ import { TasInfoEntity, TasInfoXTotvsProdInfoEntity } from 'src/app/Entities/TAS
 })
 export class XtotvsTabComponent implements OnInit {
   @Input() infoProperty: TasInfoEntity;
-  @Input() productInformation = Array<TasInfoXTotvsProdInfoEntity>();
 
   constructor() { }
   ngOnInit() {
   }
+
   onPClick() {
-    this.productInformation.push(new TasInfoXTotvsProdInfoEntity()); // adds new product
+    this.infoProperty['x-totvs'].productInformation.push(new TasInfoXTotvsProdInfoEntity()); // adds new product
+
   }
   deletePassedProduct(xtotvsProduct: TasInfoXTotvsProdInfoEntity) {
-    console.log('teste');
-    const productIndex = this.productInformation.findIndex(value => value === xtotvsProduct); // gets server index
-    console.log(productIndex);
-
-    this.productInformation = this.productInformation.splice(productIndex, 1);
+    const productIndex = this.infoProperty['x-totvs'].productInformation.findIndex(value => value === xtotvsProduct); // gets product index
+    this.infoProperty['x-totvs'].productInformation = this.infoProperty['x-totvs'].productInformation.splice(productIndex, 1);
   }
 
 }

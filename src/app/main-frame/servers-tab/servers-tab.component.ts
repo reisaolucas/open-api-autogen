@@ -19,10 +19,7 @@ export class ServersTabComponent implements OnInit {
   }
 
   deletePassedServer(serverProperty: TasServerEntity) {
-    console.log('teste');
     const serverIndex = this.serversProperty.findIndex(value => value === serverProperty); // gets server index
-    console.log(serverIndex);
-
     this.serversProperty = this.serversProperty.splice(serverIndex, 1);
   }
 

@@ -21,7 +21,7 @@
     </thf-button>
   </div>
 
-  <div class="thf-row" *ngFor="let product of productInformation">
+  <div class="thf-row" *ngFor="let product of infoProperty['x-totvs'].productInformation">
     <app-xtotvs-product [xtotvsProduct]="product" (deleteClicked)="deletePassedProduct($event)" class="thf-lg-12 thf-mb-3"></app-xtotvs-product>
   </div>
 
