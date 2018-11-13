@@ -1,6 +1,5 @@
 <form #xtotvsForm="ngForm" novalidate>
 
-
   <div class="thf-row">
     <thf-input class="thf-lg-6 thf-mb-2" name="xtotvs-message-name" 
       [(ngModel)]="infoProperty['x-totvs'].messageDocumentation.name" t-label="Nome" t-required>
@@ -18,34 +17,12 @@
   </div>
 
   <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-product" 
-      [(ngModel)]="infoProperty['x-totvs'].productInformation.product" t-label="Produto" t-required>
-    </thf-input>
+    <thf-button class="thf-md-3 thf-m-5" t-label="Adicionar Produto" (t-click)="onPClick()">
+    </thf-button>
   </div>
 
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-adapter" 
-      [(ngModel)]="infoProperty['x-totvs'].productInformation.adapter" t-label="Adapter" t-required>
-    </thf-input>
-  </div>
-
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-contact" 
-      [(ngModel)]="infoProperty['x-totvs'].productInformation.contact" t-icon="thf-icon-user"
-      t-label="Contato" t-required>
-    </thf-input>
-  </div>
-
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-description" 
-      [(ngModel)]="infoProperty['x-totvs'].productInformation.description" t-label="Descrição" t-required>
-    </thf-input>
-  </div>
-
-  <div class="thf-row">
-    <thf-input class="thf-lg-12 thf-mb-2" name="xtotvs-product-helpurl" 
-      [(ngModel)]="infoProperty['x-totvs'].productInformation.helpUrl" t-label="URL da Ajuda" t-required>
-    </thf-input>
+  <div class="thf-row" *ngFor="let product of productInformation">
+    <app-xtotvs-product [xtotvsProduct]="product" (deleteClicked)="deletePassedProduct($event)" class="thf-lg-12 thf-mb-3"></app-xtotvs-product>
   </div>
 
 </form>

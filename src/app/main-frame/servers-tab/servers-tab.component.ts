@@ -7,11 +7,6 @@ import { TasServerEntity } from 'src/app/Entities/TASEntity';
 })
 export class ServersTabComponent implements OnInit {
 
-  arrayGenerica = [
-    1, 2, 3, 4, 5
-  ];
-
-
   @Input() serversProperty: Array<TasServerEntity>;
 
   constructor() { }

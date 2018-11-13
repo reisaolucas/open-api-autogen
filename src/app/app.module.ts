@@ -16,6 +16,7 @@ import { EnumBoxComponent } from './main-frame/servers-tab/server-box/variable-b
 import { TagBoxComponent } from './main-frame/tags-tab/tag-box/tag-box.component';
 import { CodeTabComponent } from './main-frame/code-tab/code-tab.component';
 import { XtotvsTabComponent } from './main-frame/xtotvs-tab/xtotvs-tab.component';
+import { XtotvsProductComponent } from './main-frame/xtotvs-tab/xtotvs-product/xtotvs-product.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { XtotvsTabComponent } from './main-frame/xtotvs-tab/xtotvs-tab.component
     EnumBoxComponent,
     TagBoxComponent,
     CodeTabComponent,
-    XtotvsTabComponent
+    XtotvsTabComponent,
+    XtotvsProductComponent
   ],
   imports: [
     BrowserModule,
